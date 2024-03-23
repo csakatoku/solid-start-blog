@@ -1,10 +1,8 @@
-import { A } from "solid-start/router";
+import { A } from "@solidjs/router";
+import { ArticleDefinition } from "~/types";
 
 interface Props {
-  article: {
-    id: number;
-    title: string;
-  };
+  article: ArticleDefinition;
 }
 
 export default function Article({ article }: Props) {

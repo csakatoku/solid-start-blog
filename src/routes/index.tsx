@@ -1,5 +1,5 @@
 import { For } from "solid-js";
-import { Title } from "solid-start";
+import { Title } from "@solidjs/meta";
 import Article from "~/components/Article/Article";
 
 export default function Home() {
@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <main>
       <Title>Hello World</Title>
+      <h1>Hello World</h1>
       <For each={articles}>{(article) => <Article article={article} />}</For>
     </main>
   );
